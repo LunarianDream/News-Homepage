@@ -1,0 +1,11 @@
+@media only screen and (width: 375px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100vw;
+    outline: 1px solid red;
+  }
+}
+
+/*# sourceMappingURL=layout.css.map */
