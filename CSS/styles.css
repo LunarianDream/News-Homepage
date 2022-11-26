@@ -1,17 +1,17 @@
 @font-face {
-  src: url(./Fonts/Inter-Regular.ttf);
+  src: url(../Fonts/Inter-Regular.ttf);
   font-family: "Inter";
   font-style: Regular;
   font-weight: 400;
 }
 @font-face {
-  src: url(./Fonts/Inter-Bold.ttf);
+  src: url(../Fonts/Inter-Bold.ttf);
   font-family: "Inter";
   font-style: Bold;
   font-weight: 700;
 }
 @font-face {
-  src: url(./Fonts/Inter-ExtraBold.ttf);
+  src: url(../Fonts/Inter-ExtraBold.ttf);
   font-family: "Inter";
   font-style: Extra-Bold;
   font-weight: 800;
@@ -124,6 +124,7 @@ p {
   }
   header {
     margin-bottom: 3.5em;
+    margin: 0;
   }
   header #top_links #burger_menu {
     display: none;
@@ -134,16 +135,19 @@ p {
     align-content: center;
     gap: 2em;
   }
-  #top_articles {
-    display: flex;
-    flex-direction: row;
-  }
   .desktop_image {
     width: 100%;
   }
-  #news_feed, #top_articles, #main_image {
-    margin: 0;
+  .main_title {
+    font-size: 3.5em;
+    font-weight: 800;
     padding: 0;
+  }
+  #summary {
+    margin: 0;
+  }
+  #news_feed h2 {
+    font-size: 2.5em;
   }
 }
 
