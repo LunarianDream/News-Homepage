@@ -3,6 +3,7 @@
 const menuButton = document.querySelector('#menu_button');
 const closeMenuButton = document.querySelector('#close_menu_button');
 const offCanvasMenu = document.querySelector('#off_canvas_menu');
+const overlay= document.querySelector('#overlay');
 
 // const menuToggle = () => {
 //     if (offCanvasMenu.hasAttribute('class', 'menu_closed')) {
@@ -15,8 +16,10 @@ const offCanvasMenu = document.querySelector('#off_canvas_menu');
 menuButton.addEventListener('click', () => {
     offCanvasMenu.classList.remove('menu_closed');
     offCanvasMenu.classList.add('menu_expanded');
+    overlay.style.opacity = '.5';
 });
 closeMenuButton.addEventListener('click', () => {
     offCanvasMenu.classList.remove('menu_expanded');
     offCanvasMenu.classList.add('menu_closed');
+    overlay.style.opacity = '0';
 });
