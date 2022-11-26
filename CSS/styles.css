@@ -17,7 +17,6 @@
   font-weight: 800;
 }
 body {
-  background-color: hsl(36deg, 100%, 99%);
   font-family: "Inter", sans-serif;
   margin: 2em 1em;
   overflow-x: hidden;
@@ -156,9 +155,6 @@ p {
   font-size: 2em;
   color: hsl(35deg, 77%, 62%);
   margin-bottom: 1em;
-}
-#news_feed p {
-  color: hsl(36deg, 100%, 99%);
 }
 #news_feed hr {
   color: hsl(36deg, 100%, 99%);
