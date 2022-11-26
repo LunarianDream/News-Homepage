@@ -1,0 +1,105 @@
+@font-face
+    src: url(./Fonts/Inter-Regular.ttf)
+    font-family: 'Inter'
+    font-style: Regular
+    font-weight: 400
+
+@font-face
+    src: url(./Fonts/Inter-Bold.ttf)
+    font-family: 'Inter'
+    font-style: Bold
+    font-weight: 700
+
+@font-face 
+    src: url(./Fonts/Inter-ExtraBold.ttf)
+    font-family: 'Inter'
+    font-style: Extra-Bold
+    font-weight: 800
+
+$soft-orange: hsl(35, 77%, 62%)
+$soft-red: hsl(5, 85%, 63%)
+$off-white: hsl(36, 100%, 99%)
+$grayish-blue: hsl(233, 8%, 79%)
+$dark-grayish-blue: hsl(236, 13%, 42%)
+$very-dark-blue: hsl(240, 100%, 5%)
+
+body 
+    font-family: 'Inter', sans-serif
+    margin: 1em
+    overflow-x: hidden
+
+p 
+    color: $dark-grayish-blue
+    font-size: 15px
+    line-height: 1.5em
+    margin-bottom: 1em
+    margin-top: 1em
+
+#read_more
+    background-color: $soft-red
+    border: none
+    color: $off-white
+    font-weight: Bold
+    letter-spacing: .4em
+    padding: 1em 2.5em
+    text-transform: uppercase
+
+#news_feed
+    background-color: $very-dark-blue
+    color: $off-white
+    margin-top: 4em
+    padding: 1em
+
+    h2
+        font-size: 2em
+        color: $soft-orange
+        margin-bottom: 1em
+    
+    hr 
+        color: $off-white
+        margin: 2em 0
+
+#top_articles
+    margin-top: 4em
+    display: flex
+    flex-direction: column
+    gap: 1em
+
+    .top_article 
+        display: flex
+        flex-direction: row
+        gap: 1em
+
+        .article_image
+            width: 33%
+
+        div:nth-child(even)
+            align-self: space-between
+            padding: .4em
+            width: 66%
+
+    img 
+        width: 100%
+        object-fit: contain
+
+    h1 
+        color: $grayish-blue
+        font-weight: 700
+        padding-bottom: .4em
+    
+    h2 
+        font-size: 1em
+        font-weight: 800
+    
+
+@media only screen and (max-width: 375px)
+    #main_image 
+        width: 100vw
+
+        #mobile_image
+            max-width: 340px
+    
+    .main_title
+        padding-right: 3em
+
+    

@@ -1,10 +1,23 @@
-@media only screen and (width: 375px) {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 375px) {
   header {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    width: 100vw;
+    justify-content: space-between;
+    width: 100%;
     outline: 1px solid red;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .desktop_image {
+    display: none;
   }
 }
 
