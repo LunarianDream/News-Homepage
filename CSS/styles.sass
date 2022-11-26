@@ -31,7 +31,7 @@ body
     margin: 2em 1em
     overflow-x: hidden
 
-    .off_canvas_menu
+    #off_canvas_menu
         background-color: $off-white
         display: flex
         flex-direction: column
@@ -39,20 +39,17 @@ body
         position: absolute
         right: 0
         top: 0
-        transform: translateX(100%)
         width: 68vw
         z-index: 10
-    
-    
-        
 
         div
             align-self: end
 
-            #close_menu_button
-                background-color: transparent
-                border: none
-                margin: 2em
+        #close_menu_button
+            background-color: transparent
+            border: none
+            cursor: pointer
+            margin: 2em
 
         .off_canvas_links
             display: flex
@@ -65,7 +62,13 @@ body
                 color: $very-dark-blue
                 text-decoration: none
     
-    .expanded
+    .menu_closed
+        transform: translateX(100%)
+        transition: ease-in 350ms
+        
+
+    
+    .menu_expanded
         transform: translateX(0)
         transition: ease-out 350ms
 
@@ -79,6 +82,7 @@ body
     button
         background-color: transparent
         border: none
+        cursor: pointer
         
     .navigation_links
         display: none
@@ -92,7 +96,9 @@ body
                 color: $dark-grayish-blue
                 text-decoration: none
 
-    #burger_menu
+            a:hover 
+                color: $soft-red
+
 
 .main_title
     font-size: 2.5em
@@ -117,17 +123,28 @@ p
     background-color: $soft-red
     border: none
     color: $off-white
+    cursor: pointer
     font-weight: Bold
     letter-spacing: .4em
     margin-top: .5em
     padding: 1em 2.5em
     text-transform: uppercase
 
+#read_more:hover
+    background-color: $very-dark-blue
+
 #news_feed
     background-color: $very-dark-blue
     color: $off-white
-    margin-top: 4em
+    margin-top: 2em
     padding: 1em
+
+    a 
+        text-decoration: none
+        color: white
+    
+    a:hover
+        color: $soft-orange
 
     h2
         font-size: 2em
@@ -144,6 +161,13 @@ p
     flex-direction: column
     gap: 1em
 
+    a 
+        text-decoration: none
+        color: black
+    
+    a:hover
+        color: $soft-red
+
     .top_article 
         display: flex
         flex-direction: row
@@ -153,10 +177,7 @@ p
             width: 33%
 
         div:nth-child(even)
-            display: flex
-            flex-direction: column
-            flex-wrap: no-wrap
-            justify-content: space-between 
+ 
             width: 66%
 
     img 
@@ -173,41 +194,44 @@ p
         font-weight: 800
     
 
-@media only screen and (min-width: 750px) and (max-width: $breakpoint-large)
+@media only screen and (min-width: 751px) and (max-width: $breakpoint-large)
     body
         margin: 5em 10em
 
-    header
-        margin-bottom: 3.5em
-        
-        #top_links
+        .off_canvas_menu
+            display: none
 
-            #burger_menu
-                display: none
+        header
+            margin-bottom: 3.5em
+            
+            #top_links
 
-            .navigation_links
-                display: flex
-                flex-direction: row
-                align-content: center
-                gap: 2em
+                #burger_menu
+                    display: none
 
-        #news_feed, #top_articles, #main_image
-        margin: 0
+                .navigation_links
+                    display: flex
+                    flex-direction: row
+                    align-content: center
+                    gap: 2em
 
-    .desktop_image
-        width: 100%
+            #news_feed, #top_articles, #main_image
+            margin-top: 2em
 
-    .main_title
-        font-size: 3.5em
-        font-weight: 800
-        padding: 0
+        .desktop_image
+            width: 100%
 
-    #summary
-        margin: 0
+        .main_title
+            font-size: 3.5em
+            font-weight: 800
+            padding: 0
 
-    #news_feed 
-        h2
-            font-size: 2.5em
+        #summary
+            margin: 0
+
+        #news_feed 
+            h2
+                font-size: 2.5em
         
 
 
