@@ -23,6 +23,9 @@ $grayish-blue: hsl(233, 8%, 79%)
 $dark-grayish-blue: hsl(236, 13%, 42%)
 $very-dark-blue: hsl(240, 100%, 5%)
 
+$breakpoint-small: 375px
+$breakpoint-large: 1440px
+
 body 
     font-family: 'Inter', sans-serif
     margin: 2em 1em
@@ -124,5 +127,33 @@ p
         font-weight: 800
     
 
+@media only screen and (min-width: 750px) and (max-width: $breakpoint-large)
+    body
+        margin: 5em 10em
+
+    header
+        margin-bottom: 3.5em
+        
+        #top_links
+
+            #burger_menu
+                display: none
+
+            .navigation_links
+                display: flex
+                flex-direction: row
+                align-content: center
+                gap: 2em
+    
+    #top_articles
+        display: flex
+        flex-direction: row
+
+    .desktop_image
+        width: 100%
+
+    #news_feed, #top_articles, #main_image
+        margin: 0
+        padding: 0
 
     

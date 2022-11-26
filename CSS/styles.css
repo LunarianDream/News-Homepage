@@ -118,4 +118,33 @@ p {
   font-weight: 800;
 }
 
+@media only screen and (min-width: 750px) and (max-width: 1440px) {
+  body {
+    margin: 5em 10em;
+  }
+  header {
+    margin-bottom: 3.5em;
+  }
+  header #top_links #burger_menu {
+    display: none;
+  }
+  header #top_links .navigation_links {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 2em;
+  }
+  #top_articles {
+    display: flex;
+    flex-direction: row;
+  }
+  .desktop_image {
+    width: 100%;
+  }
+  #news_feed, #top_articles, #main_image {
+    margin: 0;
+    padding: 0;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

@@ -4,10 +4,17 @@
 }
 
 @media only screen and (width: 1440px) {
+  header {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
   main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 2fr, 1fr, 1fr;
+    gap: 2em;
   }
   main #main_image {
     grid-column: 1/3;
