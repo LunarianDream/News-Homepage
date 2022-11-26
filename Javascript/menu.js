@@ -17,9 +17,11 @@ menuButton.addEventListener('click', () => {
     offCanvasMenu.classList.remove('menu_closed');
     offCanvasMenu.classList.add('menu_expanded');
     overlay.style.opacity = '.5';
+    overlay.style.zIndex = '9';
 });
 closeMenuButton.addEventListener('click', () => {
     offCanvasMenu.classList.remove('menu_expanded');
     offCanvasMenu.classList.add('menu_closed');
     overlay.style.opacity = '0';
+    overlay.style.zIndex = '-1';
 });

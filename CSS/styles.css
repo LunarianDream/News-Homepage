@@ -52,6 +52,9 @@ body #off_canvas_menu .off_canvas_links a {
   color: hsl(240deg, 100%, 5%);
   text-decoration: none;
 }
+body #off_canvas_menu .off_canvas_links a:hover {
+  color: hsl(5deg, 85%, 63%);
+}
 body .menu_closed {
   transform: translateX(100%);
   transition: ease-in 350ms;
@@ -68,7 +71,7 @@ body #overlay {
   right: 0;
   top: 0;
   width: 100vw;
-  z-index: 8;
+  z-index: -1;
 }
 
 #top_links {
