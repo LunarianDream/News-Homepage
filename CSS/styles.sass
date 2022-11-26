@@ -31,16 +31,59 @@ body
     margin: 2em 1em
     overflow-x: hidden
 
+    .off_canvas_menu
+        background-color: $off-white
+        display: flex
+        flex-direction: column
+        height: 100vh
+        position: absolute
+        right: 0
+        top: 0
+        transform: translateX(100%)
+        width: 68vw
+        z-index: 10
+    
+    
+        
+
+        div
+            align-self: end
+
+            #close_menu_button
+                background-color: transparent
+                border: none
+                margin: 2em
+
+        .off_canvas_links
+            display: flex
+            flex-direction: column
+            gap: 1.5em
+            list-style: none
+            margin: 2em
+
+            a 
+                color: $very-dark-blue
+                text-decoration: none
+    
+    .expanded
+        transform: translateX(0)
+        transition: ease-out 350ms
+
 
 
 #top_links
+    display: flex
+    flex-direction: row
+    align-content: center
+    
     button
         background-color: transparent
         border: none
         
     .navigation_links
-        list-style: none
         display: none
+        list-style: none
+        
 
         li 
             display: inline-block
@@ -52,8 +95,9 @@ body
     #burger_menu
 
 .main_title
-    padding-top: .5em
+    font-size: 2.5em
     font-weight: 800
+    padding-top: .5em
 
 p 
     color: $dark-grayish-blue
@@ -103,14 +147,16 @@ p
     .top_article 
         display: flex
         flex-direction: row
-        gap: 1em
+        gap: 1.5em
 
         .article_image
             width: 33%
 
         div:nth-child(even)
-            align-self: space-between
-            padding: .4em
+            display: flex
+            flex-direction: column
+            flex-wrap: no-wrap
+            justify-content: space-between 
             width: 66%
 
     img 
