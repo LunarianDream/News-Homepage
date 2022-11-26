@@ -5,13 +5,44 @@ $breakpoint-large: 1440px
     margin: 0
     padding: 0
 
+
+
+@media only screen and (width: $breakpoint-large)
+    main
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-template-rows: 2fr, 1fr, 1fr
+
+        #main_image
+            grid-column: 1/3
+            grid-row: 1/2
+        
+        .main_title
+            grid-column: 1/2
+            grid-row: 2/3
+
+        #summary
+            grid-column: 2/3
+            grid-row: 2/3
+        
+        #news_feed  
+            grid-column: 3/4
+            grid-row: 1/3
+        
+        #top_articles
+            grid-column: 1/-1
+            grid-row: 3/4
+            display: flex
+
+    .mobile_image 
+        display: none
+
 @media only screen and (max-width: $breakpoint-small)
     header
         display: flex
         flex-direction: row
         justify-content: space-between
         width: 100%
-        outline: 1px solid red
 
         nav
 
@@ -23,5 +54,3 @@ $breakpoint-large: 1440px
 
     .desktop_image
         display: none
-
-
