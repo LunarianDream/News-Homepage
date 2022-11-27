@@ -47,8 +47,10 @@
     </header>
     <main>
         <div id="main_image">
-            <img class="desktop_image" src="./Images/image-web-3-desktop.jpg" />
-            <img class="mobile_image" src="./Images/image-web-3-mobile.jpg" />
+            <picture>
+                <source srcset="./Images/image-web-3-desktop.jpg" media="(min-width:500px)">
+                <img src="./Images/image-web-3-mobile.jpg" alt="" />
+            </picture>
         </div>
         <h1 class="main_title">The Bright Future of Web 3.0?</h1>
         <div id="summary">

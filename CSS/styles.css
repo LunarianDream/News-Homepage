@@ -118,7 +118,7 @@ p {
   margin-top: 2em;
   width: 100%;
 }
-#main_image .mobile_image {
+#main_image img {
   width: 100%;
 }
 
@@ -174,20 +174,9 @@ p {
 #top_articles a:hover {
   color: hsl(5deg, 85%, 63%);
 }
-#top_articles .top_article {
-  display: flex;
-  flex-direction: row;
-  gap: 1.5em;
-}
-#top_articles .top_article .article_image {
-  width: 33%;
-}
-#top_articles .top_article div:nth-child(even) {
-  width: 66%;
-}
 #top_articles img {
   width: 100%;
-  object-fit: contain;
+  object-fit: fill;
 }
 #top_articles h1 {
   color: hsl(233deg, 8%, 79%);
@@ -199,7 +188,7 @@ p {
   font-weight: 800;
 }
 
-@media only screen and (min-width: 751px) and (max-width: 1440px) {
+@media only screen and (min-width: 1080px) {
   body {
     margin: 5em 10em;
   }
@@ -218,9 +207,6 @@ p {
     flex-direction: row;
     align-content: center;
     gap: 2em;
-  }
-  body .desktop_image {
-    width: 100%;
   }
   body .main_title {
     font-size: 3.5em;

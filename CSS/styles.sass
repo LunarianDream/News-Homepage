@@ -129,7 +129,7 @@ p
     margin-top: 2em
     width: 100%
 
-    .mobile_image
+    img 
         width: 100%
 
 #read_more
@@ -181,21 +181,11 @@ p
     a:hover
         color: $soft-red
 
-    .top_article 
-        display: flex
-        flex-direction: row
-        gap: 1.5em
-
-        .article_image
-            width: 33%
-
-        div:nth-child(even)
- 
-            width: 66%
+    
 
     img 
         width: 100%
-        object-fit: contain
+        object-fit: fill
 
     h1 
         color: $grayish-blue
@@ -207,7 +197,7 @@ p
         font-weight: 800
     
 
-@media only screen and (min-width: 751px) and (max-width: $breakpoint-large)
+@media only screen and (min-width: 1080px)
     body
         margin: 5em 10em
 
@@ -231,9 +221,6 @@ p
             #news_feed, #top_articles, #main_image
             margin-top: 2em
 
-        .desktop_image
-            width: 100%
-
         .main_title
             font-size: 3.5em
             font-weight: 800
@@ -245,6 +232,7 @@ p
         #news_feed 
             h2
                 font-size: 2.5em
+        
         
 
 

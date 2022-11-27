@@ -5,9 +5,76 @@ $breakpoint-large: 1440px
     margin: 0
     padding: 0
 
+header
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+
+.top_article 
+    display: flex
+    flex-direction: row
+    gap: 1.5em
+
+    div:nth-child(even)
+        display: flex
+        flex-direction: column
+        width: 66%
 
 
-@media only screen and (min-width: 751px) and (max-width: $breakpoint-large)
+
+/* ============= Tablet Styling ============= 
+   ========================================== */
+
+@media only screen and (min-width: 600px)
+
+    #off_canvas_menu
+        display: none
+
+    header
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        width: 100%
+
+        #top_links
+            #burger_menu
+                display: none
+            
+            .navigation_links   
+                display: flex
+                flex-direction: row
+                gap: 2em
+
+    main 
+        display: flex
+        flex-direction: column
+        align-content: center
+
+        #top_articles
+            .top_article 
+                display: flex
+                flex-direction: row
+                justify-items: start
+
+                div:nth-child(even)
+                    display: flex
+                    flex-direction: column
+                    width: 66%
+                
+                img 
+                    height: 145px
+                        
+
+/* ============= Desktop Styling============= 
+   ========================================== */     
+
+@media only screen and (min-width: 1080px)
+
+    #off_canvas_menu
+        display: none
+
     header
         align-items: center
         display: flex
@@ -55,25 +122,3 @@ $breakpoint-large: 1440px
             .top_article:nth-child(3)
                 grid-column: 3/4
                 grid-row: 1/-1
-
-    .mobile_image 
-        display: none
-
-@media only screen and (max-width: 750px)
-    header
-        display: flex
-        flex-direction: row
-        justify-content: space-between
-        align-items: center
-        width: 100%
-
-        nav
-
-    main 
-        display: flex
-        flex-direction: column
-        align-content: center
-    
-
-    .desktop_image
-        display: none
