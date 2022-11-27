@@ -194,6 +194,20 @@ p {
   font-weight: 800;
 }
 
+footer {
+  background-color: hsl(233deg, 8%, 79%);
+}
+footer p {
+  color: hsl(240deg, 100%, 5%);
+}
+footer p a {
+  text-decoration: none;
+  color: hsl(36deg, 100%, 99%);
+}
+footer p a:hover {
+  color: hsl(5deg, 85%, 63%);
+}
+
 @media only screen and (min-width: 1080px) {
   body {
     margin-top: 3em;
