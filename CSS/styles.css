@@ -24,6 +24,8 @@ body {
   font-family: "Inter", sans-serif;
   margin: 2em 1em;
   overflow-x: hidden;
+  overflow: hidden;
+  position: relative;
 }
 body #off_canvas_menu {
   background-color: hsl(36deg, 100%, 99%);
