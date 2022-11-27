@@ -218,7 +218,6 @@ footer p a:hover {
   }
   body header {
     margin-bottom: 3.5em;
-    margin-top: 2em;
   }
   body header #top_links #burger_menu {
     display: none;
@@ -228,6 +227,9 @@ footer p a:hover {
     flex-direction: row;
     align-content: center;
     gap: 2em;
+  }
+  body header #news_feed, body header #top_articles, body header #main_image {
+    margin-top: 2em;
   }
   body .main_title {
     font-size: 3.5em;
