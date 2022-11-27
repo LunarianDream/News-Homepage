@@ -16,6 +16,10 @@
   font-style: Extra-Bold;
   font-weight: 800;
 }
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Inter", sans-serif;
   margin: 2em 1em;
@@ -140,7 +144,6 @@ p {
 
 #news_feed {
   background-color: hsl(240deg, 100%, 5%);
-  color: hsl(36deg, 100%, 99%);
   margin-top: 2em;
   padding: 1em;
 }
@@ -155,6 +158,9 @@ p {
   font-size: 2em;
   color: hsl(35deg, 77%, 62%);
   margin-bottom: 1em;
+}
+#news_feed p {
+  color: hsl(36deg, 100%, 99%);
 }
 #news_feed hr {
   color: hsl(36deg, 100%, 99%);
@@ -190,7 +196,8 @@ p {
 
 @media only screen and (min-width: 1080px) {
   body {
-    margin: 5em 10em;
+    margin-top: 3em;
+    margin-inline: 4em;
   }
   body .off_canvas_menu {
     display: none;

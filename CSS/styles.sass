@@ -26,6 +26,9 @@ $very-dark-blue: hsl(240, 100%, 5%)
 $breakpoint-small: 375px
 $breakpoint-large: 1440px
 
+html
+    overflow-x: hidden
+
 body 
     font-family: 'Inter', sans-serif
     margin: 2em 1em
@@ -148,7 +151,6 @@ p
 
 #news_feed
     background-color: $very-dark-blue
-    color: $off-white
     margin-top: 2em
     padding: 1em
 
@@ -163,6 +165,9 @@ p
         font-size: 2em
         color: $soft-orange
         margin-bottom: 1em
+
+    p 
+        color: $off-white
     
     hr 
         color: $off-white
@@ -199,7 +204,8 @@ p
 
 @media only screen and (min-width: 1080px)
     body
-        margin: 5em 10em
+        margin-top: 3em
+        margin-inline: 4em
 
         .off_canvas_menu
             display: none
